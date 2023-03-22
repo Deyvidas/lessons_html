@@ -1,0 +1,50 @@
+html {
+    background: #1A191C;
+    font-family: Montserrat;
+    color: #9F9CA6;
+}
+
+.name_of_lesson {
+    font-weight: normal;
+}
+
+h1 {
+    color: #ff0000;
+}
+
+h2 {
+    color: #FF6F00;
+}
+
+h3 {
+    color: #009607;
+}
+
+hr {
+    border: 1px dashed #00ff5933;
+}
+
+li {
+    margin-inline-start: 2%;
+}
+
+.pre_with_2tab {
+    margin-inline-start: 4%;
+}
+
+pre {
+    font-family: Consolas;
+    font-size: 18px;
+    color: #9F9CA6;
+    margin-top: 2px;
+    margin-bottom: 2px;
+}
+
+a {
+    color: #2E35FF;
+    /* text-decoration: var(--devsite-link-text-decoration,none); */
+}
+
+img {
+    vertical-align: top;
+}

@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="refresh" content="5">
+    <title>Document</title>
+    <script type="text/javascript" src="https://livejs.com/live.js"></script>
+    <link rel="stylesheet" href="css/style.css">  <!-- Для импорта настроек из файла style.css -->
+</head>
+<body>
+
+
+<!-- Random -->
+    <h1 class="h1_red">Random</h1><br>
+    <p>hello world of html! <img class="smile1" src="pictures/smile1.png" alt="smile1"></p><br>
+
+
+<!-- Структура html кода -->
+    <hr>
+    <h1 class="h1_red">Структура html кода.</h1><br>
+<xmp>
+<!DOCTYPE html>
+<html lang="ru">  <!-- В атрибут lang задается язык контента веб страницы -->
+<!-- Атрибут lang можно задавать любым тегам, если нужно уточнить, на каком языке написан текст внутри тега. -->
+<!-- Но если задать его тегу <html>, то действие атрибута распространится на весь документ целиком. -->
+<head>
+    <!-- Cодержит машиночитаемую информацию (metadata) о документе, например его заголовок, скрипты и страницы стилей. -->
+    <!-- С помощью <meta> можно сообщать браузеру, поисковому роботу или другому устройству различную служебную информацию -->
+    <!-- (или метаинформацию) о вашем сайте: кодировку текста, описание контента и так далее. -->
+    <meta charset="UTF-8">  <!-- С помощью атрибута charset указывается кодировка текста HTML-страницы. -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="refresh" content="5">
+    <title>Document</title>  <!-- В нём задаётся заголовок страницы, который отображается во вкладках браузера. -->
+    <script type="text/javascript" src="https://livejs.com/live.js"></script>    <!-- Скрипт для автоматического обновления вкладки браузера после изменения файла. -->
+    <link rel="stylesheet" href="css/style.css">  <!-- Для импорта настроек из файла style.css -->
+</head>
+<body>
+    <!-- Содержание страницы, которое отображается в окне браузера. Все тексты и картинки мы будем добавлять внутрь <body>. -->
+</body>
+</html>
+</xmp>
+    <br><p class="p_important">Оба тега ( </p><xmp class="p_important"><head> и <body></xmp><p class="p_important"> ) в документе могут быть в единственном числе.</p>
+
+
+    <!-- Xmr -->
+    <hr>
+    <h1 class="h1_red"><pre class="xmr_for_title">&lt;xmp&gt;code&lt;/xmp&gt</pre></h1><a href="http://htmlbook.ru/html/xmp" target="_blank"><img class="arrow_right1" src="pictures/arrow_right1.png" alt="arrow_right1"></p><br></a><br>
+    <p>Таг <span class="span_code">&lt;xmp&gt;код&lt;/xmp&gt;</span> позволяет выводить на страницу любой код!</p><br>
+    <br><h2 class="h2_orange">код</h2>
+<xmp>
+<h1 class="h1_red">Title 1</h1><br>
+<p>Paragraph 1</p>
+</xmp>
+    <br><h2 class="h2_orange">реализация</h2><br>
+    <h1 class="h1_red">Title 1</h1><br>
+    <p>Paragraph 1</p><br>
+    <br><h2 class="h2_orange">параметры</h2>
+<xmp>
+h1 {
+    display: inline;  <!-- Что бы блок не занимал всю строку. -->
+}
+
+.h1_red {
+    color: #ff0000e5;  <!-- Цвет шрифта. -->
+    font-size: 23px;  <!-- Размер шрифта. -->
+}
+</xmp><br>
+    <h2 class="h2_orange">даже такой!<img class="smile1" src="pictures/smile1.png" alt="smile1"></h2>
+<xmp>
+class DecoratorWithParams:
+    def __init__(self, *args, **kwargs):
+        self.param1, self.param2, *self.other_args = args
+        self.param3, self.param4, *self.other_kwargs = kwargs.values()
+    def __call__(self, *args, **kwargs):
+        self.func, *self.other = args
+        @wraps(self.func)
+        def wrapper(*args, **kwargs):
+            print('Декоратор что то делает перед вызовом декорированной функции.')
+            result = self.func(*args, **kwargs)
+            print(f'Декоратор распечатал результат декорируемой функции --> {result}')
+            print(f'Декоратор распечатал свои параметры --> {self.param1, self.param2, self.param3, self.param4}')
+            print('Декоратор что то делает после вызова декорированной функции.')
+            return result
+        return wrapper
+@DecoratorWithParams('param1', 'param2', parameter3='param3', parameter4='param4')
+def function(string1, string2, str3, str4):
+    """Documentation of function."""
+    return string1, string2, str3, str4
+</xmp>
+
+
+    <!-- br -->
+    <hr>
+    <h1 class="h1_red"><xmp class="xmr_for_title"><br></xmp></h1><a href="http://htmlbook.ru/html/br" target="_blank"><img class="arrow_right1" src="pictures/arrow_right1.png" alt="arrow_right1"></p><br></a><br>
+    <p>Тэг <xmp><br></xmp> делает перенос строки.</p><br>
+    <br><h2 class="h2_orange">код</h2>
+<xmp>
+<p>first string</p><br>
+<p>second string</p>
+</xmp>
+<br><h2 class="h2_orange">реализация</h2><br>
+<p>first string</p><br>
+<p>second string</p>
+<br>
+</body>
+</html>
+
+
+    <!-- hr -->
+    <hr>
+    <h1 class="h1_red"><xmp class="xmr_for_title"><hr></xmp></h1><a href="http://htmlbook.ru/html/hr" target="_blank"><img class="arrow_right1" src="pictures/arrow_right1.png" alt="arrow_right1"></p><br></a><br>
+    <p>Тэг <xmp><hr></xmp> рисует разделительную линию.</p><br>
+    <br><h2 class="h2_orange">код</h2>
+<xmp>
+<p>first string</p><br>
+<hr class="hr_short"><p>second string</p>
+</xmp>
+    <br><h2 class="h2_orange">реализация</h2><br>
+    <p>first string</p><br>
+    <hr class="hr_short"><p>second string</p><br>
+    <br><h2 class="h2_orange">параметры</h2>
+<xmp>
+hr {
+    border: 1px dashed #00ff5933;  <!-- Толщина, тип, цвет. -->
+    width: 80%;  <!-- Длинна. -->
+    margin-left: 0;  <!-- Отступ с левого края. -->
+}
+
+.hr_short {
+    width: 7%;  <!--Длинна.-->
+}
+</xmp>
+
+
+    <!-- a -->
+    <hr>
+    <h1 class="h1_red"><xmp class="xmr_for_title"><a href="путь к веб странице или файлу" target="_blank">Имя якоря</a></xmp></h1><a href="http://htmlbook.ru/html/a" target="_blank"><img class="arrow_right1" src="pictures/arrow_right1.png" alt="arrow_right1"></p><br></a><br>
+    <p>Тэг <xmp><a href="https://ya.ru/" target="_blank">ya.ru</a></xmp> присвоит ссылку https://ya.ru/ строке ya.ru.</p><br>
+    <br><h2 class="h2_orange">код</h2>
+<xmp>
+<a href="https://ya.ru/" target="_blank">ya.ru</a><br>
+<a href="https://ya.ru/" target="_blank"><img src="pictures/arrow_right1.png" alt="arrow_right1"></a>
+</xmp>
+    <br><h2 class="h2_orange">реализация</h2><br>
+    <a href="https://ya.ru/" target="_blank">ya.ru</a><i><p> ссылкой служит строка;</p></i><br>
+    <a href="https://ya.ru/" target="_blank"><img class="arrow_right1" src="pictures/arrow_right1.png" alt="arrow_right1"></a><i><p> ссылкой служит картинка.</p></i><br>
+    <br><p class="p_important">Как видно из примера, ссылкой может быть как текст, так и файл.</p><br>
+    <br><h2 class="h2_orange">параметры</h2>
+<xmp>
+a {
+    display: inline;  <!-- Чтобы не занимать всю строчку. -->
+    font-family: Montserrat;  <!-- Шрифт. -->
+    color: #0596cf;  <!-- Цвет шрифта ссылки. -->
+    font-size: 15px;  <!-- Размер шрифта ссылки. -->
+    text-decoration-color: #ff0000e5;  <!-- Цвет подчеркивания ссылки. -->
+}
+</xmp>
+    <br><img src="pictures/about_tag_a.png" alt="about_tag_a" border="1", height="225", width="450"><br>
+    <br><p>
+        Помимо непременного href, тег a может иметь необязательный атрибут target<br>
+        (англ. target, «мишень»). Он «нацеливает» браузер, указывая вкладку,<br>
+        где нужно открыть страницу, на которую ведёт ссылка.<br>
+        Без атрибута target она откроется в текущей вкладке.<br>
+        <br>Если добавлен атрибут target со значением “_blank” (от англ. blank, «чистый»),<br>
+        то другая страница будет показана в новой, пустой вкладке. Так лучше поступать<br>
+        со ссылками на внешние ресурсы. Тогда ваша страница останется открытой<br>
+        в браузере пользователя, и вы не потеряете трафик.
+    </p><br>
+    <br><img src="pictures/about_tag_a2.png" alt="about_tag_a" border="1", height="225", width="450"><br>
+
+    <!--  -->

@@ -15,7 +15,7 @@ h2 {
 
 hr {
     border: 1px dashed #00ff5933;
-    width: 80%;
+    width: 100%;
     margin-left: 0;
 }
 
@@ -62,8 +62,8 @@ a {
 
 .home_botton {
     position: fixed;
-    left: 96%;
-    top: 0%;
+    top: 0px;
+    right: 0px;
 }
 
 .xmr_for_title {
@@ -71,6 +71,12 @@ a {
     font-family: Consolas;
     color: #ff0000e5;
     font-size: 25px;
+}
+
+.xmp_without_space {
+    position: relative;
+    top: 0px;
+    left: -40px;
 }
 
 .smile1 {
@@ -91,7 +97,7 @@ a {
 }
 
 .hr_short {
-    width: 7%;
+    width: 300px;
 }
 
 .p_important {

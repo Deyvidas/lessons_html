@@ -29,16 +29,21 @@ p {
     display: inline;
 }
 
+pre {
+    display: inline;
+    font-family: Montserrat;
+}
+
 a {
     display: inline;
     font-family: Montserrat;
-    color: #0596cf;
+    color: #0077ffe5;
     font-size: 15px;
-    text-decoration-color: #ff0000e5;
+    text-decoration-color: #0077ffe5;
 }
 
 .h1_red {
-    color: #ff0000e5;
+    color: #ff0000;
     font-size: 23px;
 }
 
@@ -47,6 +52,18 @@ a {
     font-size: 20px;
     font-weight: normal;
     font-style: italic;
+}
+
+.h2_tab_cont {
+    color: #c4c4c4;
+    font-size: 15px;
+    font-weight: normal;
+}
+
+.home_botton {
+    position: fixed;
+    left: 96%;
+    top: 0%;
 }
 
 .xmr_for_title {
@@ -59,13 +76,13 @@ a {
 .smile1 {
     position: relative;
     top: 10px;
-    right: 5px;
+    right: 0px;
 }
 
 .arrow_right1 {
     position: relative;
     top: 10px;
-    left: 5px;
+    left: 0px;
 }
 
 .span_code {
@@ -79,6 +96,5 @@ a {
 
 .p_important {
     color: #ffc400;
-    font-weight: bold;
     text-decoration-line: underline;
 }

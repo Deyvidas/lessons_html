@@ -10,16 +10,31 @@
     <link rel="stylesheet" href="css/style.css">  <!-- Для импорта настроек из файла style.css -->
 </head>
 <body>
+    <h1 id="start_page" class="h1_red">Оглавление</h1>
+    <ul>
+        <li><a href="#Random"><h2 class="h2_tab_cont">Random</h2></a></li>
+        <li><a href="#Структура html кода."><h2 class="h2_tab_cont">Структура html кода.</h2></a></li>
+        <li><a href="#Xmr"><h2 class="h2_tab_cont"><pre>&lt;xmp&gt;code&lt;/xmp&gt</pre></h2></a></li>
+        <li><a href="#br"><h2 class="h2_tab_cont"><xmp><br></xmp></h2></a></li>
+        <li><a href="#hr"><h2 class="h2_tab_cont"><xmp><hr></xmp></h2></a></li></li>
+        <li><a href="#a"><h2 class="h2_tab_cont"><xmp><a href="..." target="...">...</a></xmp></h2></a></li></li>
+        <li><a href="#id"><h2 class="h2_tab_cont"><xmp><? id="..."></?> или <? id="..."></xmp></h2></a></li></li>
+        <li></li>
+    </ul>
+
+
+<!-- home button -->
+    <a href="#start_page"><img class="home_botton" src="pictures/home_botton1.png" alt="home_botton1"></a>
 
 
 <!-- Random -->
-    <h1 class="h1_red">Random</h1><br>
+    <h1 id="Random" class="h1_red">Random</h1><br>
     <p>hello world of html! <img class="smile1" src="pictures/smile1.png" alt="smile1"></p><br>
 
 
 <!-- Структура html кода -->
     <hr>
-    <h1 class="h1_red">Структура html кода.</h1><br>
+    <h1 id="Структура html кода." class="h1_red">Структура html кода.</h1><br>
 <xmp>
 <!DOCTYPE html>
 <html lang="ru">  <!-- В атрибут lang задается язык контента веб страницы -->
@@ -47,7 +62,7 @@
 
     <!-- Xmr -->
     <hr>
-    <h1 class="h1_red"><pre class="xmr_for_title">&lt;xmp&gt;code&lt;/xmp&gt</pre></h1><a href="http://htmlbook.ru/html/xmp" target="_blank"><img class="arrow_right1" src="pictures/arrow_right1.png" alt="arrow_right1"></p><br></a><br>
+    <h1 id="Xmr" class="h1_red"><pre class="xmr_for_title">&lt;xmp&gt;code&lt;/xmp&gt</pre></h1><a href="http://htmlbook.ru/html/xmp" target="_blank"><img class="arrow_right1" src="pictures/arrow_right1.png" alt="arrow_right1"></p><br></a><br>
     <p>Таг <span class="span_code">&lt;xmp&gt;код&lt;/xmp&gt;</span> позволяет выводить на страницу любой код!</p><br>
     <br><h2 class="h2_orange">код</h2>
 <xmp>
@@ -94,7 +109,7 @@ def function(string1, string2, str3, str4):
 
     <!-- br -->
     <hr>
-    <h1 class="h1_red"><xmp class="xmr_for_title"><br></xmp></h1><a href="http://htmlbook.ru/html/br" target="_blank"><img class="arrow_right1" src="pictures/arrow_right1.png" alt="arrow_right1"></p><br></a><br>
+    <h1 id="br" class="h1_red"><xmp class="xmr_for_title"><br></xmp></h1><a href="http://htmlbook.ru/html/br" target="_blank"><img class="arrow_right1" src="pictures/arrow_right1.png" alt="arrow_right1"></p><br></a><br>
     <p>Тэг <xmp><br></xmp> делает перенос строки.</p><br>
     <br><h2 class="h2_orange">код</h2>
 <xmp>
@@ -111,7 +126,7 @@ def function(string1, string2, str3, str4):
 
     <!-- hr -->
     <hr>
-    <h1 class="h1_red"><xmp class="xmr_for_title"><hr></xmp></h1><a href="http://htmlbook.ru/html/hr" target="_blank"><img class="arrow_right1" src="pictures/arrow_right1.png" alt="arrow_right1"></p><br></a><br>
+    <h1 id="hr" class="h1_red"><xmp class="xmr_for_title"><hr></xmp></h1><a href="http://htmlbook.ru/html/hr" target="_blank"><img class="arrow_right1" src="pictures/arrow_right1.png" alt="arrow_right1"></p><br></a><br>
     <p>Тэг <xmp><hr></xmp> рисует разделительную линию.</p><br>
     <br><h2 class="h2_orange">код</h2>
 <xmp>
@@ -137,7 +152,7 @@ hr {
 
     <!-- a -->
     <hr>
-    <h1 class="h1_red"><xmp class="xmr_for_title"><a href="путь к веб странице или файлу" target="_blank">Имя якоря</a></xmp></h1><a href="http://htmlbook.ru/html/a" target="_blank"><img class="arrow_right1" src="pictures/arrow_right1.png" alt="arrow_right1"></p><br></a><br>
+    <h1 id="a" class="h1_red"><xmp class="xmr_for_title"><a href="путь к веб странице или файлу" target="_blank">Имя якоря</a></xmp></h1><a href="http://htmlbook.ru/html/a" target="_blank"><img class="arrow_right1" src="pictures/arrow_right1.png" alt="arrow_right1"></p><br></a><br>
     <p>Тэг <xmp><a href="https://ya.ru/" target="_blank">ya.ru</a></xmp> присвоит ссылку https://ya.ru/ строке ya.ru.</p><br>
     <br><h2 class="h2_orange">код</h2>
 <xmp>
@@ -171,4 +186,41 @@ a {
     </p><br>
     <br><img src="pictures/about_tag_a2.png" alt="about_tag_a" border="1", height="225", width="450"><br>
 
-    <!--  -->
+    <!-- id -->
+    <hr>
+    <h1 id="id" class="h1_red">Аттрибут id: <xmp class="xmr_for_title"><h1 id="unique_id">...</h1></xmp></h1><a href="http://htmlbook.ru/html/attr/id" target="_blank"><img class="arrow_right1" src="pictures/arrow_right1.png" alt="arrow_right1"></p><br></a><br>
+    <p>Аттрибут (id="unique_id") создает уникальную ссылку по которой можно обращаться из любого места на ТЕКУЩЕЙ странице.</p><br>
+    <br><h2 class="h2_orange">код</h2>
+<xmp>
+<h1 id="start_page" class="h1_red">Оглавление</h1>  <!-- Это первый элемент в теге <body> c id="start_page". -->
+... какие то элементы
+<h1 id="start_page" class="h1_red">Оглавление2</h1>  <!-- Это второй элемент в теге <body> id="start_page". -->
+<a href="#start_page" target="_parent"><img src="pictures/arrow_up1.png" alt="arrow_up1"></a>
+</xmp>
+    <br><h2 class="h2_orange">реализация</h2><br>
+    <h1 id="start_page" class="h1_red">Оглавление2</h1><br>
+    <a href="#start_page" target="_parent"><img src="pictures/arrow_up1.png" alt="arrow_up1"></a></a><br>
+    <br><p>
+        Теперь к этой картинке прикреплена ссылка на первый элемент с тэгом start_page,<br>
+        и если создастся любой другой элемент, с таким же id то приоритетнее тот элемент<br>
+        который обявлен раньше в текущем html коде.
+    </p><br><br>
+    <p>
+        Также, из одного файла html можно ссылаться на элемент находящийся в другом,<br>
+        файле html. id должны быть уникальными только внутри одного файл html,<br>
+        то есть в одном файле не должно существовать два одинаковых id,<br>
+        а вот если id элемента в одном файле совпадает с id элемента другого файла<br>
+        они друг другу не будут мешать.<br>
+        <br>
+    </p>
+    <br><h2 class="h2_orange">код</h2>
+<xmp>
+<a href="/Dev/lessons_html/lesson_2/lesson_2.html#start_page" target="_blank"><img src="pictures/arrow_out1.png" alt="arrow_out1"></a>
+</xmp>
+    <br><h2 class="h2_orange">реализация</h2><br>
+    <h1 id="start_page">Start page</h1><br>
+    <a href="/Dev/lessons_html/lesson_2/lesson_2.html#start_page" target="_blank"><img src="pictures/arrow_out1.png" alt="arrow_out1"></a><br>
+
+
+    <!-- id -->
+    <hr>
